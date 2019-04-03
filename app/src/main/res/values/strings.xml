@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Student Alert</string>
+    <string name="button_click">Click Me</string>
+    <string name="home">Home</string>
+    <string name="individual">Individual</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="sub_hint">Enter the subject</string>
+    <string name="body_hint">Enter the message</string>
+    <string name="about_text">"Student Alert\n An One Tap Alert Mail System\n Developed By CSE A (2016\-20) Batch."</string>
+    <string-array name="class_list">
+        <item>CSE A</item>
+        <item>CSE B</item>
+    </string-array>
+    <string-array name="student_list">
+        <item>Ajith</item>
+        <item>Arun</item>
+        <item>Ashwin Kumar</item>
+        <item>Ashok</item>
+        <item>Dinesh A</item>
+        <item>Eswar</item>
+        <item>Fazil</item>
+        <item>Giri</item>
+        <item>Jegan</item>
+        <item>Kavin</item>
+    </string-array>
+</resources>

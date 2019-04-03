@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbg"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/spin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="40sp"
+        android:background="@drawable/spinnerbg"
+        android:entries="@array/class_list"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/subjectName"
+        android:hint="@string/sub_hint"
+        android:layout_marginTop="110dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/subjectbg"
+        tools:ignore="Autofill"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/bodyText"
+        android:hint="@string/body_hint"
+        android:gravity="top"
+        android:layout_marginTop="170dp"
+        android:paddingTop="10dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/messagebg"
+        tools:ignore="Autofill"
+        android:inputType="textLongMessage"
+        />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:id="@+id/button_click"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginStart="300dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/sendbutton"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_above="@id/navigation"
+        android:background="@drawable/shadow"/>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/my_navigation_items"/>
+
+
+</RelativeLayout>
